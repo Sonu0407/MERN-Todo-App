@@ -6,7 +6,10 @@ import toast from "react-hot-toast";
 const TaskCard = ({ task, setTasks }) => {
   const handleDelete = async (id) => {
     try {
-      const url = `http://localhost:8080/api/tasks/${id}`;
+      const url =
+        import.meta.env.MODE === "development"
+          ? `http://localhost:8080/api/tasks/${id}`
+          : `/api/tasks/${id}`;
       const response = await fetch(url, {
         method: "DELETE",
       });

@@ -17,7 +17,10 @@ const TaskDetailPage = () => {
   useEffect(() => {
     const fetchTask = async () => {
       try {
-        const url = `http://localhost:8080/api/tasks/${id}`;
+        const url =
+          import.meta.env.MODE === "development"
+            ? `http://localhost:8080/api/tasks/${id}`
+            : `/api/tasks/${id}`;
         const response = await fetch(url, {
           method: "GET",
         });
@@ -37,7 +40,10 @@ const TaskDetailPage = () => {
 
   const handleDelete = async () => {
     try {
-      const url = `http://localhost:8080/api/tasks/${id}`;
+      const url =
+        import.meta.env.MODE === "development"
+          ? `http://localhost:8080/api/tasks/${id}`
+          : `/api/tasks/${id}`;
       const response = await fetch(url, {
         method: "DELETE",
       });
@@ -63,7 +69,10 @@ const TaskDetailPage = () => {
     setSave(true);
 
     try {
-      const url = `http://localhost:8080/api/tasks/${id}`;
+      const url =
+        import.meta.env.MODE === "development"
+          ? `http://localhost:8080/api/tasks/${id}`
+          : `/api/tasks/${id}`;
       const response = await fetch(url, {
         method: "PUT",
         headers: {

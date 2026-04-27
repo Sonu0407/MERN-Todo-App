@@ -13,7 +13,10 @@ const HomePage = () => {
   useEffect(() => {
     const fetchTasks = async () => {
       try {
-        const url = "http://localhost:8080/api/tasks"; // http://localhost:8080/api/tasks/
+        const url =
+          import.meta.env.MODE === "development"
+            ? "http://localhost:8080/api/tasks"
+            : "/api/tasks"; // http://localhost:8080/api/tasks/
         const response = await fetch(url, {
           method: "GET",
         });

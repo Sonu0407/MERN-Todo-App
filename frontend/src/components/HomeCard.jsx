@@ -14,7 +14,10 @@ const TaskCard = ({ task, setTasks }) => {
     }
 
     try {
-      const url = "http://localhost:8080/api/tasks";
+      const url =
+        import.meta.env.MODE === "developement"
+          ? "http://localhost:8080/api/tasks"
+          : "/api/tasks";
       const response = await fetch(url, {
         method: "POST",
         headers: {

@@ -5,7 +5,7 @@ import { ArrowLeftIcon } from "lucide-react";
 import toast from "react-hot-toast";
 
 const TaskDetailPage = () => {
-  const [task, setTask] = useState("");
+  const [task, setTask] = useState(null);
   const [save, setSave] = useState(false);
   const navigate = useNavigate();
   const { id } = useParams();

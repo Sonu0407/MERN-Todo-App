@@ -1,0 +1,81 @@
+.card-radio {
+  /* layout */
+  display: flex;
+  align-items: center;
+  /* box model */
+  padding: 5px;
+  /* styling */
+  background-color: azure;
+  border: 2px solid white;
+  /* extras */
+}
+
+.card-header {
+  /* layout */
+  display: block;
+  /* box model */
+  width: 100%;
+  margin: 5px;
+  padding: 10px 0px 10px 5px;
+  /* styling */
+  text-decoration: none;
+  background-color: azure;
+  color: black;
+  /* extras */
+  border: 1px solid rgba(0, 0, 0, 0.256);
+  border-radius: 8px;
+}
+
+.card-header:first-child {
+  margin-top: 20px;
+}
+
+.card-body {
+  /* layout */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* box model */
+  /* styling */
+  /* extras */
+}
+
+.card-title {
+  /* layout */
+  /* box model */
+  margin: 3px;
+  /* styling */
+  font-weight: 400;
+  /* extras */
+}
+
+.card-createdAt {
+  /* layout */
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  /* box model */
+  /* styling */
+  color: red;
+  font-size: 0.72rem;
+  /* extras */
+}
+
+.radio-input {
+  /* layout */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box model */
+  height: 90px;
+  width: 20px;
+  /* styling */
+  font-size: 1rem;
+  text-align: center;
+  /* extras */
+}
+
+/* layout */
+/* box model */
+/* styling */
+/* extras */

@@ -1,0 +1,97 @@
+.task-head {
+  /* layout */
+
+  /* box model */
+  height: 100vh;
+  max-width: 100%;
+
+  /* styling */
+  /* background-color: burlywood; */
+  /* extras */
+}
+
+.notloading {
+  /* layout */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* box model */
+  /* height: 100vh; */
+  margin-top: 10px;
+
+  /* styling */
+
+  /* extras */
+}
+
+/*  */
+
+@media only screen and (max-width: 600px) {
+  .display-tasks {
+    /* layout */
+    /* box model */
+    height: 250px;
+    width: 90%;
+    max-width: 300px;
+    /* max-height: 100vh; */
+    /* styling */
+    /* background-color: white; */
+    /* extras */
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .display-tasks {
+    /* layout */
+    /* box model */
+    height: 250px;
+    width: 90%;
+    max-width: 300px;
+    /* max-height: 100vh; */
+    /* styling */
+    /* background-color: white; */
+    /* extras */
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .display-tasks {
+    /* layout */
+    /* box model */
+    height: 300px;
+    width: 350px;
+    max-width: 350px;
+    max-height: 300px;
+    /* styling */
+    /* background-color: white; */
+    /* extras */
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .display-tasks {
+    /* layout */
+    /* box model */
+    height: 350px;
+    max-height: 350px;
+    width: 450px;
+    max-width: 450px;
+    /* styling */
+    /* background-color: white; */
+    /* extras */
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .display-tasks {
+    /* layout */
+    /* box model */
+    height: 450px;
+    max-height: 450px;
+    width: 550px;
+    max-width: 550px;
+    /* styling */
+    /* background-color: white; */
+    /* extras */
+  }
+}

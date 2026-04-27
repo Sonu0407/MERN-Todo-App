@@ -1,0 +1,174 @@
+.taskdetail-card {
+  /* layout */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* box model */
+  /* styling */
+  /* background-color: rgb(240, 240, 240); */
+  /* border: 2px solid #000; */
+  /* extras */
+}
+
+.taskdetail-card-body {
+  /* layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* box model */
+  height: 100vh;
+  width: 40%;
+  /* styling */
+  /* border: 2px solid red; */
+  /* extras */
+}
+
+.taskdetail-card-content {
+  /* layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  /* box model */
+  height: max-content;
+  width: 100%;
+  /* styling */
+  /* border: 2px solid green; */
+  /* extras */
+  box-shadow: 0px 0px 5px 1px #d6d6d6d7;
+}
+
+.back-h1 {
+  /* layout */
+  display: flex;
+  /* box model */
+  width: 100%;
+  /* styling */
+  /* extras */
+}
+
+.back-link {
+  /* layout */
+  display: flex;
+  align-items: center;
+  /* box model */
+  margin: 10px 5px 5px 10px;
+  /* styling */
+  text-decoration: none;
+  color: white;
+  /* extras */
+}
+
+.arrow-left-icon {
+  margin-right: 4px;
+}
+
+.taskdetail-card-content h1 {
+  /* layout */
+  /* box model */
+  margin-top: 10px;
+  /* styling */
+  background: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+  font-weight: 600;
+  /* extras */
+}
+
+.taskdetail-card-content input {
+  /* layout */
+  /* box model */
+  width: 60%;
+  height: 30px;
+  padding: 5px 0px 5px 10px;
+  /* styling */
+  font-size: 1rem;
+  background: linear-gradient(#ffffff, #ffffffdc);
+  color: rgb(0, 0, 0);
+  /* extras */
+  border: none;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.taskdetail-card-content input:focus {
+  outline: none;
+  transform: scale(2);
+}
+
+.taskdetails-actions {
+  /* layout */
+  display: flex;
+  justify-content: space-around;
+  /* box model */
+  margin: 10px 0px 5px 0px;
+  width: 100%;
+  /* styling */
+  /* border: 2px solid black; */
+  /* extras */
+}
+
+.taskdetails-actions .delete {
+  /* layout */
+  /* box model */
+  padding: 10px 20px;
+  /* styling */
+  background: rgb(255, 62, 19);
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  /* extras */
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.taskdetails-actions .delete:hover {
+  background: rgba(255, 62, 19, 0.842);
+}
+
+.taskdetails-actions .update {
+  /* layout */
+  /* box model */
+  padding: 10px 20px;
+  /* styling */
+  background: rgb(0, 149, 255);
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  /* extras */
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.taskdetails-actions .update:hover {
+  background: rgba(0, 149, 255, 0.799);
+}
+
+@media (max-width: 800px) {
+  .taskdetail-card-body {
+    width: 90%;
+  }
+
+  .taskdetail-card-content h1 {
+    font-size: 1.9rem;
+  }
+}
+
+/* layout */
+/* box model */
+/* styling */
+/* extras */

@@ -1,0 +1,152 @@
+.navbar {
+  /* layout */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box model */
+  height: 60px;
+  width: 100%;
+  position: sticky;
+  /* styling */
+  background: #00fdc6c7;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  /* extras */
+  z-index: 999;
+}
+
+.navbar-container {
+  /* layout */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* box model */
+  width: 100%;
+  /* for right and left padding */
+  padding: 0 2rem;
+  max-width: 1800px;
+  /* styling */
+  /* extras */
+}
+
+.navbar-logo {
+  /* layout */
+  /* box model */
+  /* styling */
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+  /* extras */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar-menu {
+  /* layout */
+  display: flex;
+  gap: 1.5rem;
+  /* box model */
+  /* styling */
+  text-align: center;
+  /* extras */
+  list-style: none;
+}
+
+.navbar-menu li {
+  /* layout */
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu li a {
+  /* layout */
+  /* box model */
+  padding: 3px 10px;
+  /* styling */
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #000;
+  /* extras */
+  border-radius: 20px;
+  border: 2px solid transparent;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+  background: rgba(188, 212, 229, 0.8);
+  color: #151515;
+  border: 2px solid rgb(0, 107, 165);
+}
+
+.navbar-toggle {
+  /* layout */
+  display: none;
+  /* box model */
+  padding: 10px;
+  /* styling */
+  background: transparent;
+  /* extras */
+  border: none;
+  cursor: pointer;
+}
+
+.bar {
+  /* layout */
+  display: block;
+  /* box model */
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  /* styling */
+  background: #000000;
+  /* extras */
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 550px) {
+  .navbar {
+    backdrop-filter: none;
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    position: absolute;
+    height: 100vh;
+    width: 250px;
+    top: 0;
+    right: 0;
+    padding: 5rem 1.5rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+  }
+
+  .navbar-container .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: block;
+    z-index: 999;
+  }
+
+  .navbar-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar-toggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .navbar-toggle.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* layout */
+/* box model */
+/* styling */
+/* extras */

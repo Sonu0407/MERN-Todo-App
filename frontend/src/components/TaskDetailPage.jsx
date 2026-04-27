@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import "../styles/TaskDetailPage.css";
 import { useParams, useNavigate, Link } from "react-router";
-import { ArrowLeftIcon } from "lucide-react";
+import { ArrowLeftIcon, LoaderIcon } from "lucide-react";
 import toast from "react-hot-toast";
 
 const TaskDetailPage = () => {
   const [task, setTask] = useState(null);
+  const [loading, setLoading] = useState(true);
   const [save, setSave] = useState(false);
   const navigate = useNavigate();
   const { id } = useParams();
@@ -37,6 +38,14 @@ const TaskDetailPage = () => {
 
     fetchTask();
   }, [id]); // runs once
+
+  if (loading) {
+    return (
+      <div>
+        <LoaderIcon />
+      </div>
+    );
+  }
 
   const handleDelete = async () => {
     try {

@@ -33,6 +33,8 @@ const TaskDetailPage = () => {
       } catch (error) {
         console.log("Error while fetching tasks", error);
         toast.error("Internal Server Error");
+      } finally {
+        setLoading(false);
       }
     };
 
